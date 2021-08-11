@@ -299,10 +299,10 @@ Welcome to the beilypay-api-doc !
 | 参数名称 | 参数说明 | in | 是否必须 | 数据类型 |
 | --- | --- | --- | --- | --- |
 | appId | 应用id | body | true | long |
-| email |  | 邮箱 | true | string |
+| email | 邮箱 |  | true | string |
 | frontCallback | 前端支付成功跳转地址 | body | true | string |
 | merchantId | 商户id | body | true | integer(int32) |
-| mobile |  | 手机号 印度10位 | true | string |
+| mobile | 手机号 印度10位 |  | true | string |
 | notifyUrl | 通知回调地址 | body | true | string |
 | outOrderNo | 商户单号 | body | true | string |
 | payAmount | 代收金额, 整数 单位分 | body | true | integer(int32) |
