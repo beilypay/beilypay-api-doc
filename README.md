@@ -24,6 +24,7 @@ Welcome to the beilypay-api-doc !
 **接口响应 code 200为成功  其他为失败，失败原因见msg描述**
 
 **测试环境域名 http://dev.beilypay.com （测试环境不发起真正的代付、代收。只做API验证。）**
+
 **正式环境域名  http://service.beilypay.com**
 
 
