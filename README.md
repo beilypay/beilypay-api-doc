@@ -19,14 +19,12 @@ Welcome to the beilypay-api-doc !
 签名:  sign = MD5(stringSignTemp) .toUpperCase();
 
 
-## 接口响应 code 200为成功  其他为失败，失败原因见msg描述
+# 环境信息
 
+**接口响应 code 200为成功  其他为失败，失败原因见msg描述**
 
-测试环境不发起真正的代付、代收。只做API验证。
-
-
-## 测试环境域名 http://dev.beilypay.com
-## 正式环境域名  http://service.beilypay.com
+**测试环境域名 http://dev.beilypay.com （测试环境不发起真正的代付、代收。只做API验证。）**
+**正式环境域名  http://service.beilypay.com**
 
 
 # 代付
@@ -118,7 +116,7 @@ Welcome to the beilypay-api-doc !
 
 | 参数名称 | 参数说明 | 类型 | schema |
 | --- | --- | --- | --- |
-| code |  | integer(int32) | integer(int32) |
+| code | 200成功 其他失败 | integer(int32) | integer(int32) |
 | data |  | 代付结果返回 | 代付结果返回 |
 | msg |  | string |  |
 
@@ -236,7 +234,7 @@ Welcome to the beilypay-api-doc !
 
 | 参数名称 | 参数说明 | 类型 | schema |
 | --- | --- | --- | --- |
-| code |  | integer(int32) | integer(int32) |
+| code | 200成功 其他失败  | integer(int32) | integer(int32) |
 | data |  | 代收订单详情查询 | 代收订单详情查询 |
 | msg |  | string |  |
 
@@ -335,7 +333,7 @@ Welcome to the beilypay-api-doc !
 
 | 参数名称 | 参数说明 | 类型 | schema |
 | --- | --- | --- | --- |
-| code |  | integer(int32) | integer(int32) |
+| code | 200成功 其他失败  | integer(int32) | integer(int32) |
 | data |  | 代收单支付信息 | 代收单支付信息 |
 | msg |  | string |  |
 
@@ -446,7 +444,7 @@ Welcome to the beilypay-api-doc !
 
 | 参数名称 | 参数说明 | 类型 | schema |
 | --- | --- | --- | --- |
-| code |  | integer(int32) | integer(int32) |
+| code | 200成功 其他失败  | integer(int32) | integer(int32) |
 | data |  | 代收单信息 | 代收单信息 |
 | msg |  | string |  |
 
