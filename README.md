@@ -19,7 +19,7 @@ Welcome to the beilypay-api-doc !
 签名:  sign = MD5(stringSignTemp) .toUpperCase();
 
 
-
+## 接口响应 code 200为成功  其他为失败，失败原因见msg描述
 
 
 测试环境不发起真正的代付、代收。只做API验证。
@@ -85,7 +85,7 @@ Welcome to the beilypay-api-doc !
 | email | 收款人邮箱 | true | string |
 | ifsc | 账户类型为Card,分行的IFSC代码 | true | string |
 | merchantId | 商户id | true | integer(int32) |
-| mobile | 收款人手机号 | true | string |
+| mobile | 收款人手机号 印度10位手机号 | true | string |
 | notifyUrl | 通知回调地址 | true | string |
 | outOrderNo | 商户单号 | true | string |
 | payAmount | 代付金额, 整数 单位分 | true | integer(int32) |
@@ -300,10 +300,10 @@ Welcome to the beilypay-api-doc !
 | 参数名称 | 参数说明 | in | 是否必须 | 数据类型 |
 | --- | --- | --- | --- | --- |
 | appId | 应用id | body | true | long |
-| email |  | body | true | string |
+| email |  | 邮箱 | true | string |
 | frontCallback | 前端支付成功跳转地址 | body | true | string |
 | merchantId | 商户id | body | true | integer(int32) |
-| mobile |  | body | true | string |
+| mobile |  | 手机号 印度10位 | true | string |
 | notifyUrl | 通知回调地址 | body | true | string |
 | outOrderNo | 商户单号 | body | true | string |
 | payAmount | 代收金额, 整数 单位分 | body | true | integer(int32) |
