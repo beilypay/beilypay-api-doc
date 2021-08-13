@@ -163,7 +163,7 @@ Welcome to the beilypay-api-doc !
 | outOrderNo | 商户订单号 | string |
 | payAmount | 代付金额, 整数 单位分 | integer(int32) |
 | sign | 数据签名 | string |
-| status | 代付单状态 1等待回调；2成功；3失败； | integer(int32) |
+| status | 代付单状态 2成功；3失败； | integer(int32) |
 | orderNo | 交易号 | string |
 | payTime| 交易时间   | Date |
 
@@ -374,7 +374,7 @@ Welcome to the beilypay-api-doc !
 | outOrderNo | 商户订单号 | string |
 | paid | 代付金额, 整数 单位分 | integer(int32) |
 | sign | 数据签名 | string |
-| status | 代付单状态 1等待回调；2成功；3失败； | integer(int32) |
+| status | 代付单状态 2成功；3失败； | integer(int32) |
 | orderNo | 交易号 | string |
 | payTime | 交易时间   | Date |
 
