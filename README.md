@@ -536,6 +536,23 @@ Welcome to the beilypay-api-doc !
 "msg": "SUCC"
 }
 ```
+# 系统错误码
 
+| 错误码 | 错误说明 |
+| --- | --- |
+| 10001 | merchantId not exist（商户不存在） | 
+| 10002 | appId not exist（app未注册）|
+| 10003 | orderNo not exist （订单号不存在）| 
+| 10004 | sign check error（签名校验失败）|
+| 10005 | account balance not enough （代付账户余额不足）| 
+| 10006 | your requests are too frequent（请求过于频繁）|
+| 10007 | your account setting error （商户账户设置异常，联系平台处理）| 
+| 10008 | transaction fail（交易创建失败，联系平台处理）|
+| 10009 | order finished（交易已完成） | 
+| 10010 | order expire(订单已失效，请重新下单)|
+| 10011 | trans account type not support(代付账户类型不支持) | 
+| 10012 | pay tool error(银行交易失败)|
+| 10013 | param error（参数异常，具体见真实错误返回） | 
+| 20001 | unknow error(未知异常)|
 
 
