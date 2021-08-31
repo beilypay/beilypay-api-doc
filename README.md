@@ -530,9 +530,9 @@ Welcome to the beilypay-api-doc !
 {
 "code": 200,
 "data": {
-"merchantId": 111,
-"settlementAmount"99.99:
-},
+	"merchantId": 111,
+	"settlementAmount"99.99:
+	},
 "msg": "SUCC"
 }
 ```
