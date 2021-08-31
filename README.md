@@ -466,7 +466,76 @@ Welcome to the beilypay-api-doc !
 | orderNo | 交易号 | string |
 | transTime | 交易完成时间 yyyy-MM-dd HH:mm:ss | string |
 
+# 商户管理
+<a name="IV43Z"></a>
+## 商户余额查询
 
+
+**接口地址** `/merchant/accountInfo`
+
+
+**请求方式** `POST`
+
+
+**consumes** `["application/json"]`
+
+
+**请求参数**
+
+
+**AccountQueryReq**
+
+| 参数名称 | 参数说明 | 是否必须 | 数据类型 |
+| --- | --- | --- | --- |
+| appId | 应用id | true | integer(int64) |
+| merchantId | 商户id | true | integer(int32) |
+| sign | 数据签名 | true | string |
+
+
+
+**请求示例**
+
+```java
+{
+"appId": 1235677,
+"merchantId": 1123,
+"sign": "ASDAFASGTHJFJFGJFGHFG"
+}
+```
+
+
+**响应参数**
+
+| 参数名称 | 参数说明 | 类型 |
+| --- | --- | --- |
+| code | 响应码 | integer(int32) |
+| data | 业务数据 | MerchantAccountVO |
+| msg |  | string |
+
+
+
+**MerchantAccountVO**
+
+| 参数名称 | 参数说明 | 类型 |
+| --- | --- | --- |
+| merchantId | 商户id | integer(int32) |
+| settlementAmount | 账户可用金额，单位INR | number |
+
+
+
+**响应示例**
+
+
+```java
+{
+"code": 200,
+"data": {
+"merchantId": 111,
+"settlementAmount"99.99:
+},
+"msg": "SUCC"
+}
+```
 
 
 
